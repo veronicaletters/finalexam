@@ -1,0 +1,597 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* universal reset */
+*,
+*:before,
+*:after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------------------global-------------------------------------*/
+/* section{
+    padding:0px;
+} */
+/* nav */
+
+header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: white;
+    width: 100%;
+    position:fixed; top:0; z-index:100;
+}
+
+.logo img{
+    max-width: 100px;
+    cursor: pointer;
+}
+
+nav{
+    list-style: none;
+    background-color: white;
+    
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav li a{
+    color: #CC3333;
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color:darkred;
+}
+
+/* buttons */
+
+button{
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #CC3333;
+    cursor: pointer;
+}
+
+.navButton2{
+    background-color: #CC3333;
+}
+
+.navButton2:hover{
+    background-color: darkred;
+
+}
+
+
+/* Typography */
+
+h1{
+    font-family: Lilita One;
+    font-size: 50px;
+}
+
+h2{
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h3{
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h4{
+    font-family: Lilita One, sans-serif;
+    font-size: 35px;
+}
+
+h5{
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+p{
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a{
+    font-family: Quicksand, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------specific styles---------------------*/
+
+/* Home Page */
+
+/* Hero Image */
+
+.heroBlock{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    text-align: center;    
+}
+
+.heroText{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 500px;
+    position: relative;
+    margin: 0;
+    transform: translate(150px, 150px);
+    position: absolute;
+    padding: 40px 40px 40px 40px;
+    background-color: white;
+    font-family: Lilita One;
+    font-size: 40px;
+    color: black;
+} 
+
+/* orderCTA */
+
+.orderOptions{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #CC3333;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+/* About Block */
+
+.aboutBlurb{
+    display: flex;
+    flex-wrap: row wrap;
+    margin: 0 auto;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+    column-gap: 60px;
+    row-gap: 60px;
+    max-width: 970px;
+}
+
+/* Gift certificate block */
+
+.giftCTA{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.giftText{
+    position: relative;
+    transform: translate(700px, 200px);
+    position: absolute;
+    padding: 30px 50px 100px 50px;
+    background-color: white;
+}
+
+.giftButton{
+    transform: translate(800px, 300px);
+    position: absolute;
+}
+
+/* review block */
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: #CC3333;
+    padding: 70px;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+
+}
+
+.reviewTitle{
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+.review{
+    position: relative;
+    padding: 30px 50px 100px 50px;
+    background-color: white;
+    max-width: 450px;
+}
+
+.quotes{
+    max-width: 40px;
+    padding: 10px;
+}
+
+.reviewButtonSpace{
+    margin: 40px;
+}
+
+.reviewButton{
+    max-width: 400px;
+}
+
+/* Location block */
+
+.locations{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    padding: 100px;
+    justify-content: center;
+    align-content: space-around;
+    position: relative;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.locationsTitle{
+    position: absolute;
+    padding: 10px;
+    margin-top: -100px;
+}
+
+/* Order CTA 2 */
+
+.orderOptions2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #CC3333;
+    padding: 100px;
+    justify-content: center;
+    position: relative;  
+    
+}
+
+.orderTitle{
+    position: relative;
+    padding: 50px;
+    color: white;
+}
+
+/* subscribe block */
+
+.vip{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    padding: 100px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    column-gap: 60px;
+    row-gap: 60px;
+}
+
+.vipTitle{
+    position: relative;
+    transform: translate(0px, 200px);
+    position: absolute;
+    padding: 50px 50px 50px 50px;
+    background-color: white;
+    row-gap: 50px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #CC3333;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  input:hover{
+    background-color: darkred;
+    color: white;
+  } 
+
+  /* shop page */
+
+.merchHeroImage{
+  position: relative;
+}
+
+.shopHeroText{
+    display: flex;
+    flex-flow: column wrap;
+    background-color:white;
+    padding: 50px;    
+    justify-content:center;
+    align-items: center;
+    max-width: 700px;
+    transform: translate(350px, -350px);
+    position: absolute;
+}
+
+.shopCTA{
+    display: flex;
+    background-color:#CC3333;
+    padding: 10px;    
+    justify-content:center;
+    align-items: center;
+}
+
+.hotdogIcon{
+    max-width: 100px;
+    padding: 10px;
+}
+
+.merchCTA{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px;     */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.merchImage{
+    max-width: 800px;
+}
+
+.merchText{
+    padding: 20px;
+}
+
+.shopContainer{
+    display: flex;
+    flex-flow: row wrap;
+     margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    text-align: center; 
+    max-width: 1000px;
+}
+
+.item1{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.item2{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.item3{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.item4{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.item5{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.item6{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.giftPack{
+    max-width: 400px;
+    padding: 20px; 
+}
+
+/* MENU */
+
+.menuCTA{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    column-gap: 30px;
+    background-color: darkred;
+    color: white;
+    width: 100%;
+    position:fixed; top:0; z-index:100;
+}
+
+.menuBar{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    column-gap: 30px;
+    background-color: #CC3333;
+    color: white;
+    width: 100%;
+    position:fixed; top:0; z-index:100;
+}
+
+.menuOrder{
+    background-color: #CC3333;
+}
+
+.menu1:hover{
+    text-decoration: underline;
+}
+
+.menu2:hover{
+    text-decoration: underline;
+}
+
+.menu3:hover{
+    text-decoration: underline;
+}
+
+.menu4:hover{
+    text-decoration: underline;
+}
+
+.menu5:hover{
+    text-decoration: underline;
+}
+
+.menu6:hover{
+    text-decoration: underline;
+}
+
+.menu7:hover{
+    text-decoration: underline;
+}
+
+.menu8:hover{
+    text-decoration: underline;
+}
+
+.menuHeaders1{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 300px;
+    padding: 50px;
+    position: relative;
+    justify-content: center;
+    
+}
+
+.menuHeaders{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px;
+    position: relative;
+    justify-content: center;
+    
+}
+
+.menuContainer{
+    display: flex;
+    flex-flow:row wrap;
+    position: relative;
+    padding: 50px;
+    gap: 20px;
+
+    
+}
+
+.menuBoxes{
+    display: flex;
+    flex-flow:row nowrap;
+    position: relative;
+    padding:10px;
+    max-width: 600px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #CC3333;
+}
+
+.menuImage{
+    max-width: 200px;
+    padding: 10px;
+}
+
+
+
+/* footer */
+
+  footer{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    padding: 100px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    column-gap: 100px;
+    row-gap: 60px;
+    background-color: darkred;
+    color: white;
+  }
+
+ .footerLocations{
+    font-size: 16px;
+ }
+
+ .socialIcon1{
+    padding: 12px;
+ }
+
+ .socialIcon2{
+    padding: 12px;
+ }
+
+ .socialIcon3{
+    padding: 12px;
+ }
+
+ .socialIcon4{
+    padding: 12px;
+ }
